@@ -1,0 +1,784 @@
+PS D:\ATHERIA - Kopie> .\run_atheria_0_to_100.ps1
+
+[2026-02-20 20:13:28] Upgrade pip/setuptools/wheel
+CMD> .venv\Scripts\python.exe -m pip install --upgrade pip setuptools wheel
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.0.1)
+Requirement already satisfied: setuptools in .\.venv\Lib\site-packages (82.0.0)
+Requirement already satisfied: wheel in .\.venv\Lib\site-packages (0.46.3)
+Requirement already satisfied: packaging>=24.0 in .\.venv\Lib\site-packages (from wheel) (26.0)
+
+[2026-02-20 20:13:35] Install/upgrade torch
+CMD> .venv\Scripts\python.exe -m pip install --upgrade torch
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Requirement already satisfied: torch in .\.venv\Lib\site-packages (2.10.0)
+Requirement already satisfied: filelock in .\.venv\Lib\site-packages (from torch) (3.24.3)
+Requirement already satisfied: typing-extensions>=4.10.0 in .\.venv\Lib\site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in .\.venv\Lib\site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in .\.venv\Lib\site-packages (from torch) (3.6.1)
+Requirement already satisfied: jinja2 in .\.venv\Lib\site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in .\.venv\Lib\site-packages (from torch) (2026.2.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in .\.venv\Lib\site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in .\.venv\Lib\site-packages (from jinja2->torch) (3.0.3)
+
+[2026-02-20 20:13:41] Compile Python files
+CMD> .venv\Scripts\python.exe -m py_compile atheria_core.py main.py DEMO/forge_executable.py
+
+[2026-02-20 20:13:42] CLI help
+CMD> .venv\Scripts\python.exe main.py --help
+usage: main.py [-h] [--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}] {demo,meditation,ceremonial} ...
+
+ATHERIA entrypoint: osmotic demo, Aion meditation, ceremonial activation.
+
+positional arguments:
+  {demo,meditation,ceremonial}
+    demo                Run the standard osmotic ATHERIA demo.
+    meditation          Run autonomous Aion meditation.
+    ceremonial          Run ceremonial preheat + meditation sequence.
+
+options:
+  -h, --help            show this help message and exit
+  --log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}
+                        Log level for this launcher.
+
+[2026-02-20 20:13:45] Run demo (3s)
+CMD> .venv\Scripts\python.exe main.py demo --duration 3
+2026-02-20 20:13:48,712 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=36.54 | AutoSets=2 | Aion=0
+{
+  "aether_density": 39.5909,
+  "aggregatform": "Plasma",
+  "phase": "plasma",
+  "system_temperature": 96.38,
+  "rhythm_state": "sleep",
+  "rhythm_cycle": 3,
+  "structural_tension": 0.8269,
+  "tensegrity_support": 5,
+  "active_cells": 20,
+  "entropic_index": 0.338,
+  "holographic_energy": 0.9764,
+  "enzymatic_compiled_paths": 40,
+  "resource_pool": 259.9716,
+  "ather_credits": 24.0,
+  "market_role": "balanced",
+  "market_guardian_score": 0.398971,
+  "market_transactions": 0,
+  "market_borrow_events": 0,
+  "market_lend_events": 0,
+  "market_resources_in": 0.0,
+  "market_resources_out": 0.0,
+  "market_last_price": 0.0,
+  "market_last_partner": null,
+  "market_last_packet_quality": 0.0,
+  "autocatalytic_sets": 7,
+  "autocatalytic_activity": 0.0,
+  "aion_cycles": 5,
+  "aion_cycle_activity": 0.195175,
+  "semantic_analogy_cells": 9,
+  "semantic_resource_spent": 5.50206,
+  "evolved_cell_types": 3,
+  "evolved_runtime_mechanisms": 3,
+  "evolution_events": 6,
+  "evolution_program_signature": "f525f4ca1609",
+  "reproduction_events": 0,
+  "offspring_instances": 0,
+  "lineage_selection_trials": 0,
+  "lineage_selection_child_wins": 0,
+  "lineage_selection_parent_wins": 0,
+  "lineage_last_parent_fitness": 0.0,
+  "lineage_last_child_fitness": 0.0,
+  "reproduction_artifact_events": 0,
+  "reproduction_artifact_last_profile": null,
+  "reproduction_artifact_last_path": null,
+  "reproduction_artifact_last_integrity_path": null,
+  "reproduction_artifact_last_validated": false,
+  "reproduction_artifact_last_signature": null,
+  "ecological_complexity": 0.127828,
+  "selection_pressure": 0.44366,
+  "resource_scarcity": 0.149989,
+  "fitness_gradient": 0.004095,
+  "epigenetic_silenced_edges": 82,
+  "mean_hyperbolic_distance": 2.043097,
+  "dream_replay_events": 0,
+  "dream_last_replay_labels": [],
+  "healing_events": 0,
+  "healing_last_repaired_labels": [],
+  "time_crystal_energy": 0.067165,
+  "time_crystal_targets": 11,
+  "singularity_activation": 0.48018,
+  "morphic_resonance_index": 0.0,
+  "morphic_buffer_states": 3,
+  "intuition_spikes": 0,
+  "purpose_alignment": 0.431423,
+  "hgt_offers": 0,
+  "hgt_accepts": 0,
+  "hgt_rejects": 0,
+  "hgt_received": 0,
+  "hgt_donated": 0,
+  "hgt_last_partner": null,
+  "hgt_last_predicted_purpose_delta": 0.0,
+  "inter_core_dream_sync_events": 0,
+  "inter_core_dream_trauma_events": 0,
+  "inter_core_dream_peers": 0,
+  "inter_core_dream_coherence": 0.0,
+  "inter_core_dream_trauma_intensity": 0.0,
+  "global_population_size": 1,
+  "global_morphic_sync_events": 0,
+  "global_trauma_broadcast_events": 0,
+  "global_market_transactions": 0,
+  "global_market_last_price": 0.0,
+  "system_stress_index": 0.277507,
+  "purpose_homeostatic_temperature": 46.356027,
+  "aion_meditation_mode": false,
+  "topological_clusters": 1,
+  "topological_core_cells": 3,
+  "topological_edges": 6,
+  "entanglement_registry": {
+    "Sicherheit": [
+      "Reaktion"
+    ],
+    "Reaktion": [
+      "Sicherheit"
+    ]
+  },
+  "activations": {
+    "Sicherheit": 0.0982,
+    "Reaktion": 0.0982,
+    "Analyse": 1.0,
+    "Navigation": 0.7346,
+    "Heilung": 0.2352,
+    "SingularityNode": 0.4802,
+    "PurposeNode": 0.4314,
+    "Unbekannt": 1.0,
+    "Gefahrenanalyse": 0.0648,
+    "Notfallreaktion": 0.1858,
+    "EvoType_001_Seed": 0.9523,
+    "Analog_Analyse_Notfallreaktion": 1.0,
+    "Analog_Analyse_PurposeNode": 1.0,
+    "EvoType_002_Seed": 1.0,
+    "Analog_Reaktion_Navigation": 1.0,
+    "Analog_Analog_Analyse_Notfallreaktion_Analog_Analyse_PurposeNode": 0.1679,
+    "Analog_Sicherheit_Navigation": 0.8416,
+    "Analog_Gefahrenanalyse_Analog_Sicherheit_Navigation": 0.0615,
+    "Analog_Reaktion_Analog_Sicherheit_Navigation": 0.0,
+    "EvoType_003_Seed": 0.0,
+    "Analog_Analog_Sicherheit_Navigation_Analog_Reaktion_Analog_Sicherheit_Navigation": 0.1163,
+    "Analog_Sicherheit_Analog_Sicherheit_Navigation": 0.4671
+  },
+  "pressures": {
+    "Sicherheit": 74.1849,
+    "Reaktion": 74.1849,
+    "Analyse": 38.6248,
+    "Navigation": 70.5623,
+    "Heilung": 68.656,
+    "SingularityNode": 53.1935,
+    "PurposeNode": 60.9527,
+    "Unbekannt": 69.3112,
+    "Gefahrenanalyse": 86.7284,
+    "Notfallreaktion": 75.4284,
+    "EvoType_001_Seed": 22.358,
+    "Analog_Analyse_Notfallreaktion": 77.5527,
+    "Analog_Analyse_PurposeNode": 90.8425,
+    "EvoType_002_Seed": 74.5235,
+    "Analog_Reaktion_Navigation": 31.5155,
+    "Analog_Analog_Analyse_Notfallreaktion_Analog_Analyse_PurposeNode": 1.0724,
+    "Analog_Sicherheit_Navigation": 33.889,
+    "Analog_Gefahrenanalyse_Analog_Sicherheit_Navigation": 0.1648,
+    "Analog_Reaktion_Analog_Sicherheit_Navigation": 0.0,
+    "EvoType_003_Seed": 0.0,
+    "Analog_Analog_Sicherheit_Navigation_Analog_Reaktion_Analog_Sicherheit_Navigation": 0.2327,
+    "Analog_Sicherheit_Analog_Sicherheit_Navigation": 1.2591
+  },
+  "hyperbolic_distance_sicherheit_reaktion": 0.180312,
+  "chemical_measurement": 0.1155,
+  "holographic_pattern_norm": 0.9764,
+  "field_query": {
+    "interference_energy": 0.638586,
+    "future_projection": [
+      0.25871968269348145,
+      0.2681461274623871,
+      0.26896971464157104,
+      0.2633977234363556,
+      0.2644386291503906,
+      0.2655307948589325,
+      0.26044750213623047,
+      0.26028385758399963,
+      0.2683071792125702,
+      0.27300748229026794,
+      0.2867736518383026,
+      0.28272855281829834
+    ],
+    "anticipatory_shift": 0.016968,
+    "morphic_resonance_index": 0.0,
+    "uncertainty": 0.167401,
+    "response_tensor": [
+      0.171343594789505,
+      0.20540586113929749,
+      0.12050899118185043,
+      0.2190122902393341,
+      0.12863710522651672,
+      0.13024944067001343,
+      0.19434235990047455,
+      0.21113169193267822,
+      0.1456029713153839,
+      0.19706176221370697,
+      0.19033972918987274,
+      0.2482580840587616
+    ],
+    "top_matches": [
+      {
+        "label": "Sicherheit",
+        "score": 0.969151
+      },
+      {
+        "label": "Reaktion",
+        "score": 0.969035
+      },
+      {
+        "label": "Heilung",
+        "score": 0.967378
+      },
+      {
+        "label": "Unbekannt",
+        "score": 0.966129
+      }
+    ],
+    "future_top_matches": [
+      {
+        "label": "Heilung",
+        "score": 0.97972
+      },
+      {
+        "label": "Navigation",
+        "score": 0.9795
+      },
+      {
+        "label": "Gefahrenanalyse",
+        "score": 0.979457
+      },
+      {
+        "label": "Unbekannt",
+        "score": 0.979444
+      }
+    ]
+  }
+}
+
+[2026-02-20 20:13:52] Run meditation (60s)
+CMD> .venv\Scripts\python.exe main.py meditation --duration 60 --snapshot D:\ATHERIA - Kopie\logs\morphic_snapshot_20260220_201328.json
+2026-02-20 20:13:55,610 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=sleep | T=35.87 | AutoSets=2 | Aion=0
+2026-02-20 20:13:56,088 - INFO - Dashboard | Dichte=3.000 | Aggregat=Wasser | Rhythm=sleep | T=76.84 | AutoSets=4 | Aion=0
+2026-02-20 20:13:56,639 - INFO - AION Meditation | align=0.892 morphic=0.906 dist=1.408 core=3 dreams=40 semantic=3 resource=198.96
+2026-02-20 20:13:57,669 - INFO - AION Meditation | align=0.893 morphic=0.909 dist=1.237 core=3 dreams=72 semantic=3 resource=364.20
+2026-02-20 20:13:58,712 - INFO - AION Meditation | align=0.888 morphic=0.910 dist=1.394 core=3 dreams=104 semantic=3 resource=562.20
+2026-02-20 20:13:59,722 - INFO - AION Meditation | align=0.891 morphic=0.910 dist=1.121 core=3 dreams=136 semantic=3 resource=727.76
+2026-02-20 20:14:00,740 - INFO - AION Meditation | align=0.883 morphic=0.911 dist=1.376 core=3 dreams=168 semantic=4 resource=926.53
+2026-02-20 20:14:01,777 - INFO - AION Meditation | align=0.894 morphic=0.911 dist=0.731 core=3 dreams=200 semantic=6 resource=1151.54
+2026-02-20 20:14:02,798 - INFO - AION Meditation | align=0.885 morphic=0.888 dist=0.845 core=3 dreams=224 semantic=10 resource=1330.03
+2026-02-20 20:14:03,862 - INFO - AION Meditation | align=0.885 morphic=0.858 dist=0.648 core=3 dreams=256 semantic=14 resource=1637.86
+2026-02-20 20:14:04,256 - INFO - Dashboard | Dichte=24.333 | Aggregat=Wasser | Rhythm=sleep | T=79.73 | AutoSets=14 | Aion=5
+2026-02-20 20:14:04,835 - INFO - Dashboard | Dichte=23.269 | Aggregat=Wasser | Rhythm=sleep | T=78.14 | AutoSets=15 | Aion=5
+2026-02-20 20:14:04,920 - INFO - AION Meditation | align=0.881 morphic=0.882 dist=0.800 core=3 dreams=280 semantic=18 resource=1860.86
+2026-02-20 20:14:05,361 - INFO - Dashboard | Dichte=22.643 | Aggregat=Wasser | Rhythm=sleep | T=76.92 | AutoSets=15 | Aion=5
+2026-02-20 20:14:05,918 - INFO - Dashboard | Dichte=22.667 | Aggregat=Wasser | Rhythm=sleep | T=75.67 | AutoSets=15 | Aion=5
+2026-02-20 20:14:05,985 - INFO - AION Meditation | align=0.879 morphic=0.867 dist=0.753 core=3 dreams=312 semantic=22 resource=1920.48
+2026-02-20 20:14:06,623 - INFO - Dashboard | Dichte=22.234 | Aggregat=Wasser | Rhythm=sleep | T=74.62 | AutoSets=15 | Aion=5
+2026-02-20 20:14:07,325 - INFO - AION Meditation | align=0.883 morphic=0.826 dist=0.488 core=3 dreams=336 semantic=25 resource=2094.64
+2026-02-20 20:14:07,334 - INFO - Dashboard | Dichte=22.758 | Aggregat=Wasser | Rhythm=sleep | T=73.88 | AutoSets=15 | Aion=5
+2026-02-20 20:14:08,232 - INFO - Dashboard | Dichte=22.765 | Aggregat=Wasser | Rhythm=sleep | T=73.65 | AutoSets=16 | Aion=5
+2026-02-20 20:14:08,409 - INFO - AION Meditation | align=0.883 morphic=0.853 dist=0.522 core=3 dreams=360 semantic=26 resource=2299.82
+2026-02-20 20:14:08,976 - INFO - Dashboard | Dichte=24.203 | Aggregat=Wasser | Rhythm=sleep | T=73.76 | AutoSets=16 | Aion=5
+2026-02-20 20:14:09,471 - INFO - AION Meditation | align=0.880 morphic=0.859 dist=0.643 core=3 dreams=384 semantic=26 resource=2325.34
+2026-02-20 20:14:09,866 - INFO - Dashboard | Dichte=25.478 | Aggregat=Wasser | Rhythm=sleep | T=73.84 | AutoSets=16 | Aion=5
+2026-02-20 20:14:10,663 - INFO - AION Meditation | align=0.875 morphic=0.847 dist=0.811 core=3 dreams=400 semantic=26 resource=2498.27
+2026-02-20 20:14:10,670 - INFO - Dashboard | Dichte=27.113 | Aggregat=Wasser | Rhythm=sleep | T=73.85 | AutoSets=16 | Aion=5
+2026-02-20 20:14:11,624 - INFO - Dashboard | Dichte=28.366 | Aggregat=Wasser | Rhythm=sleep | T=74.37 | AutoSets=16 | Aion=5
+2026-02-20 20:14:11,717 - INFO - AION Meditation | align=0.884 morphic=0.893 dist=0.562 core=3 dreams=424 semantic=26 resource=2697.99
+2026-02-20 20:14:12,424 - INFO - Dashboard | Dichte=30.338 | Aggregat=Wasser | Rhythm=sleep | T=75.37 | AutoSets=17 | Aion=5
+2026-02-20 20:14:13,440 - INFO - AION Meditation | align=0.876 morphic=0.877 dist=0.752 core=3 dreams=448 semantic=27 resource=2717.66
+2026-02-20 20:14:13,453 - INFO - Dashboard | Dichte=30.944 | Aggregat=Wasser | Rhythm=sleep | T=75.02 | AutoSets=17 | Aion=5
+2026-02-20 20:14:14,392 - INFO - Dashboard | Dichte=32.014 | Aggregat=Wasser | Rhythm=sleep | T=74.77 | AutoSets=18 | Aion=5
+2026-02-20 20:14:14,479 - INFO - AION Meditation | align=0.876 morphic=0.871 dist=0.800 core=3 dreams=472 semantic=28 resource=2898.01
+2026-02-20 20:14:15,523 - INFO - AION Meditation | align=0.883 morphic=0.835 dist=0.487 core=3 dreams=480 semantic=29 resource=2896.43
+2026-02-20 20:14:15,538 - INFO - Dashboard | Dichte=33.108 | Aggregat=Wasser | Rhythm=sleep | T=75.18 | AutoSets=18 | Aion=5
+2026-02-20 20:14:16,178 - INFO - Dashboard | Dichte=32.592 | Aggregat=Wasser | Rhythm=sleep | T=75.41 | AutoSets=18 | Aion=5
+2026-02-20 20:14:16,994 - INFO - AION Meditation | align=0.878 morphic=0.876 dist=0.744 core=3 dreams=504 semantic=32 resource=3089.74
+2026-02-20 20:14:17,001 - INFO - Dashboard | Dichte=33.468 | Aggregat=Wasser | Rhythm=sleep | T=74.78 | AutoSets=18 | Aion=5
+2026-02-20 20:14:17,980 - INFO - Dashboard | Dichte=34.351 | Aggregat=Wasser | Rhythm=sleep | T=74.49 | AutoSets=18 | Aion=5
+2026-02-20 20:14:18,008 - INFO - AION Meditation | align=0.878 morphic=0.847 dist=0.637 core=3 dreams=520 semantic=32 resource=3287.73
+2026-02-20 20:14:18,862 - INFO - Dashboard | Dichte=34.709 | Aggregat=Wasser | Rhythm=sleep | T=73.19 | AutoSets=18 | Aion=5
+2026-02-20 20:14:19,061 - INFO - AION Meditation | align=0.873 morphic=0.860 dist=0.848 core=3 dreams=544 semantic=32 resource=3300.97
+2026-02-20 20:14:19,992 - INFO - Dashboard | Dichte=34.877 | Aggregat=Wasser | Rhythm=sleep | T=73.49 | AutoSets=18 | Aion=5
+2026-02-20 20:14:20,123 - INFO - AION Meditation | align=0.877 morphic=0.899 dist=0.808 core=3 dreams=560 semantic=32 resource=3505.30
+2026-02-20 20:14:20,991 - INFO - Dashboard | Dichte=34.893 | Aggregat=Wasser | Rhythm=sleep | T=73.78 | AutoSets=18 | Aion=5
+2026-02-20 20:14:21,174 - INFO - AION Meditation | align=0.870 morphic=0.875 dist=1.022 core=3 dreams=576 semantic=33 resource=3515.28
+2026-02-20 20:14:22,238 - INFO - AION Meditation | align=0.883 morphic=0.854 dist=0.601 core=3 dreams=584 semantic=33 resource=3530.05
+2026-02-20 20:14:22,253 - INFO - Dashboard | Dichte=35.212 | Aggregat=Wasser | Rhythm=sleep | T=73.28 | AutoSets=19 | Aion=5
+2026-02-20 20:14:23,289 - INFO - AION Meditation | align=0.875 morphic=0.856 dist=0.732 core=3 dreams=600 semantic=33 resource=3732.34
+2026-02-20 20:14:23,297 - INFO - Dashboard | Dichte=36.200 | Aggregat=Wasser | Rhythm=sleep | T=75.38 | AutoSets=19 | Aion=5
+2026-02-20 20:14:24,506 - INFO - AION Meditation | align=0.873 morphic=0.886 dist=0.803 core=3 dreams=616 semantic=34 resource=3743.79
+2026-02-20 20:14:24,515 - INFO - Dashboard | Dichte=36.314 | Aggregat=Wasser | Rhythm=sleep | T=75.81 | AutoSets=19 | Aion=5
+2026-02-20 20:14:25,571 - INFO - AION Meditation | align=0.875 morphic=0.858 dist=0.730 core=3 dreams=632 semantic=34 resource=3973.07
+2026-02-20 20:14:25,571 - INFO - Dashboard | Dichte=37.081 | Aggregat=Wasser | Rhythm=sleep | T=74.78 | AutoSets=19 | Aion=5
+2026-02-20 20:14:26,810 - INFO - AION Meditation | align=0.878 morphic=0.865 dist=0.674 core=3 dreams=648 semantic=34 resource=4190.73
+2026-02-20 20:14:26,818 - INFO - Dashboard | Dichte=37.759 | Aggregat=Wasser | Rhythm=sleep | T=74.13 | AutoSets=19 | Aion=5
+2026-02-20 20:14:27,830 - INFO - AION Meditation | align=0.876 morphic=0.861 dist=0.642 core=3 dreams=664 semantic=34 resource=4189.76
+2026-02-20 20:14:27,838 - INFO - Dashboard | Dichte=38.621 | Aggregat=Wasser | Rhythm=sleep | T=73.66 | AutoSets=19 | Aion=5
+2026-02-20 20:14:29,121 - INFO - AION Meditation | align=0.879 morphic=0.849 dist=0.571 core=3 dreams=680 semantic=34 resource=4185.17
+2026-02-20 20:14:29,137 - INFO - Dashboard | Dichte=39.517 | Aggregat=Wasser | Rhythm=sleep | T=73.57 | AutoSets=19 | Aion=5
+2026-02-20 20:14:29,875 - INFO - Dashboard | Dichte=39.793 | Aggregat=Wasser | Rhythm=sleep | T=73.82 | AutoSets=19 | Aion=5
+2026-02-20 20:14:30,149 - INFO - AION Meditation | align=0.880 morphic=0.846 dist=0.524 core=3 dreams=704 semantic=34 resource=4412.73
+2026-02-20 20:14:30,792 - INFO - Dashboard | Dichte=40.598 | Aggregat=Wasser | Rhythm=sleep | T=73.96 | AutoSets=19 | Aion=5
+2026-02-20 20:14:32,081 - INFO - AION Meditation | align=0.876 morphic=0.869 dist=0.687 core=3 dreams=720 semantic=34 resource=4411.63
+2026-02-20 20:14:32,101 - INFO - Dashboard | Dichte=41.494 | Aggregat=Wasser | Rhythm=sleep | T=73.71 | AutoSets=19 | Aion=5
+2026-02-20 20:14:33,078 - INFO - Dashboard | Dichte=41.943 | Aggregat=Wasser | Rhythm=sleep | T=73.33 | AutoSets=20 | Aion=5
+2026-02-20 20:14:33,142 - INFO - AION Meditation | align=0.876 morphic=0.857 dist=0.612 core=3 dreams=744 semantic=34 resource=4628.43
+2026-02-20 20:14:34,431 - INFO - Dashboard | Dichte=42.818 | Aggregat=Wasser | Rhythm=sleep | T=73.10 | AutoSets=20 | Aion=5
+2026-02-20 20:14:34,457 - INFO - AION Meditation | align=0.877 morphic=0.848 dist=0.635 core=3 dreams=752 semantic=34 resource=4848.35
+2026-02-20 20:14:35,493 - INFO - AION Meditation | align=0.879 morphic=0.858 dist=0.559 core=3 dreams=768 semantic=34 resource=4845.16
+2026-02-20 20:14:35,500 - INFO - Dashboard | Dichte=43.920 | Aggregat=Wasser | Rhythm=sleep | T=73.23 | AutoSets=21 | Aion=5
+2026-02-20 20:14:36,798 - INFO - AION Meditation | align=0.882 morphic=0.831 dist=0.449 core=3 dreams=784 semantic=34 resource=4853.63
+2026-02-20 20:14:36,806 - INFO - Dashboard | Dichte=44.523 | Aggregat=Wasser | Rhythm=sleep | T=73.32 | AutoSets=22 | Aion=5
+2026-02-20 20:14:37,826 - INFO - AION Meditation | align=0.881 morphic=0.888 dist=0.567 core=3 dreams=800 semantic=34 resource=4991.02
+2026-02-20 20:14:37,840 - INFO - Dashboard | Dichte=45.023 | Aggregat=Wasser | Rhythm=sleep | T=73.27 | AutoSets=22 | Aion=5
+2026-02-20 20:14:39,232 - INFO - AION Meditation | align=0.875 morphic=0.886 dist=0.800 core=3 dreams=816 semantic=34 resource=5000.31
+2026-02-20 20:14:39,248 - INFO - Dashboard | Dichte=44.550 | Aggregat=Wasser | Rhythm=sleep | T=73.22 | AutoSets=22 | Aion=5
+2026-02-20 20:14:40,304 - INFO - AION Meditation | align=0.880 morphic=0.840 dist=0.503 core=3 dreams=832 semantic=34 resource=4992.37
+2026-02-20 20:14:40,306 - INFO - Dashboard | Dichte=45.044 | Aggregat=Wasser | Rhythm=sleep | T=72.49 | AutoSets=22 | Aion=5
+2026-02-20 20:14:41,781 - INFO - Dashboard | Dichte=44.691 | Aggregat=Wasser | Rhythm=sleep | T=72.30 | AutoSets=22 | Aion=5
+2026-02-20 20:14:41,808 - INFO - AION Meditation | align=0.881 morphic=0.903 dist=0.601 core=3 dreams=848 semantic=34 resource=5000.00
+2026-02-20 20:14:42,928 - INFO - AION Meditation | align=0.876 morphic=0.813 dist=0.527 core=3 dreams=864 semantic=34 resource=4993.22
+2026-02-20 20:14:42,939 - INFO - Dashboard | Dichte=44.625 | Aggregat=Wasser | Rhythm=sleep | T=72.27 | AutoSets=22 | Aion=5
+2026-02-20 20:14:44,391 - INFO - AION Meditation | align=0.884 morphic=0.826 dist=0.412 core=3 dreams=880 semantic=34 resource=4999.27
+2026-02-20 20:14:44,408 - INFO - Dashboard | Dichte=45.177 | Aggregat=Wasser | Rhythm=sleep | T=71.76 | AutoSets=22 | Aion=5
+2026-02-20 20:14:45,522 - INFO - AION Meditation | align=0.879 morphic=0.811 dist=0.417 core=3 dreams=896 semantic=34 resource=4989.07
+2026-02-20 20:14:45,527 - INFO - Dashboard | Dichte=46.083 | Aggregat=Wasser | Rhythm=sleep | T=72.08 | AutoSets=22 | Aion=5
+2026-02-20 20:14:47,023 - INFO - AION Meditation | align=0.882 morphic=0.832 dist=0.455 core=3 dreams=912 semantic=34 resource=4999.13
+2026-02-20 20:14:47,043 - INFO - Dashboard | Dichte=46.615 | Aggregat=Wasser | Rhythm=sleep | T=71.94 | AutoSets=22 | Aion=5
+2026-02-20 20:14:47,853 - INFO - Dashboard | Dichte=46.792 | Aggregat=Wasser | Rhythm=sleep | T=71.95 | AutoSets=22 | Aion=5
+2026-02-20 20:14:48,052 - INFO - AION Meditation | align=0.880 morphic=0.861 dist=0.504 core=3 dreams=928 semantic=34 resource=4995.22
+2026-02-20 20:14:48,915 - INFO - Dashboard | Dichte=47.354 | Aggregat=Wasser | Rhythm=sleep | T=71.57 | AutoSets=22 | Aion=5
+2026-02-20 20:14:49,071 - INFO - AION Meditation | align=0.880 morphic=0.866 dist=0.506 core=3 dreams=944 semantic=34 resource=4995.22
+2026-02-20 20:14:50,532 - INFO - Dashboard | Dichte=46.647 | Aggregat=Wasser | Rhythm=sleep | T=71.55 | AutoSets=22 | Aion=5
+2026-02-20 20:14:50,574 - INFO - AION Meditation | align=0.870 morphic=0.832 dist=0.801 core=3 dreams=960 semantic=36 resource=5000.00
+2026-02-20 20:14:51,712 - INFO - AION Meditation | align=0.878 morphic=0.820 dist=0.477 core=3 dreams=968 semantic=38 resource=4984.20
+2026-02-20 20:14:51,725 - INFO - Dashboard | Dichte=46.436 | Aggregat=Wasser | Rhythm=sleep | T=71.34 | AutoSets=22 | Aion=5
+2026-02-20 20:14:53,414 - INFO - AION Meditation | align=0.867 morphic=0.911 dist=0.948 core=3 dreams=984 semantic=40 resource=4983.99
+2026-02-20 20:14:53,438 - INFO - Dashboard | Dichte=46.252 | Aggregat=Wasser | Rhythm=sleep | T=71.18 | AutoSets=23 | Aion=5
+2026-02-20 20:14:54,353 - INFO - Dashboard | Dichte=46.466 | Aggregat=Wasser | Rhythm=sleep | T=70.97 | AutoSets=23 | Aion=5
+2026-02-20 20:14:54,435 - INFO - AION Meditation | align=0.879 morphic=0.859 dist=0.517 core=3 dreams=1000 semantic=40 resource=4999.69
+2026-02-20 20:14:55,613 - INFO - AION Meditation | align=0.876 morphic=0.814 dist=0.495 core=3 dreams=1008 semantic=42 resource=4990.97
+{
+  "title": "Atheria Transzendenz-Status",
+  "status": "Transzendenz im Aufbau",
+  "duration_seconds": 60.0,
+  "singularity_reached": false,
+  "purpose_alignment": 0.876289,
+  "morphic_resonance_index": 0.813861,
+  "mean_hyperbolic_distance": 0.495112,
+  "peak_purpose_alignment": 0.897486,
+  "peak_morphic_resonance_index": 0.917863,
+  "min_mean_hyperbolic_distance": 0.305702,
+  "topological_core_cells": 3,
+  "dream_replay_delta": 1008,
+  "semantic_analogy_growth": 42,
+  "semantic_resource_spent_delta": 23.387711,
+  "evolution_events_delta": 31,
+  "reproduction_events_delta": 0,
+  "reproduction_artifact_events_delta": 0,
+  "offspring_instances": 0,
+  "resource_pool_delta": 4987.9676,
+  "resource_pool_final": 4990.9676,
+  "reproduction_artifact_last_profile": null,
+  "reproduction_artifact_last_validated": false,
+  "reproduction_artifact_last_path": null,
+  "morphic_snapshot_path": null,
+  "meditation_samples": 285,
+  "final_snapshot": {
+    "aether_density": 46.2476,
+    "aggregatform": "Wasser",
+    "phase": "liquid",
+    "system_temperature": 70.89,
+    "rhythm_state": "sleep",
+    "rhythm_cycle": 0,
+    "structural_tension": 0.0,
+    "tensegrity_support": 0,
+    "active_cells": 27,
+    "entropic_index": 0.6078,
+    "holographic_energy": 0.9058,
+    "enzymatic_compiled_paths": 81,
+    "resource_pool": 4990.9676,
+    "ather_credits": 24.0,
+    "market_role": "balanced",
+    "market_guardian_score": 0.699222,
+    "market_transactions": 0,
+    "market_borrow_events": 0,
+    "market_lend_events": 0,
+    "market_resources_in": 0.0,
+    "market_resources_out": 0.0,
+    "market_last_price": 0.0,
+    "market_last_partner": null,
+    "market_last_packet_quality": 0.0,
+    "autocatalytic_sets": 23,
+    "autocatalytic_activity": 0.0,
+    "aion_cycles": 5,
+    "aion_cycle_activity": 0.0,
+    "semantic_analogy_cells": 42,
+    "semantic_resource_spent": 23.387711,
+    "evolved_cell_types": 17,
+    "evolved_runtime_mechanisms": 14,
+    "evolution_events": 31,
+    "evolution_program_signature": "ddc8e4194417",
+    "reproduction_events": 0,
+    "offspring_instances": 0,
+    "lineage_selection_trials": 0,
+    "lineage_selection_child_wins": 0,
+    "lineage_selection_parent_wins": 0,
+    "lineage_last_parent_fitness": 0.0,
+    "lineage_last_child_fitness": 0.0,
+    "reproduction_artifact_events": 0,
+    "reproduction_artifact_last_profile": null,
+    "reproduction_artifact_last_path": null,
+    "reproduction_artifact_last_integrity_path": null,
+    "reproduction_artifact_last_validated": false,
+    "reproduction_artifact_last_signature": null,
+    "ecological_complexity": 0.648116,
+    "selection_pressure": 0.741409,
+    "resource_scarcity": 0.38,
+    "fitness_gradient": -0.000949,
+    "epigenetic_silenced_edges": 20,
+    "mean_hyperbolic_distance": 0.495112,
+    "dream_replay_events": 1008,
+    "dream_last_replay_labels": [
+      "Reaktion",
+      "Sicherheit",
+      "Navigation",
+      "Analyse",
+      "Heilung",
+      "EvoType_014_Seed"
+    ],
+    "healing_events": 1,
+    "healing_last_repaired_labels": [
+      "Heilung"
+    ],
+    "time_crystal_energy": 0.0,
+    "time_crystal_targets": 0,
+    "singularity_activation": 0.407356,
+    "morphic_resonance_index": 0.813861,
+    "morphic_buffer_states": 28,
+    "intuition_spikes": 0,
+    "purpose_alignment": 0.876289,
+    "hgt_offers": 0,
+    "hgt_accepts": 0,
+    "hgt_rejects": 0,
+    "hgt_received": 0,
+    "hgt_donated": 0,
+    "hgt_last_partner": null,
+    "hgt_last_predicted_purpose_delta": 0.0,
+    "inter_core_dream_sync_events": 0,
+    "inter_core_dream_trauma_events": 0,
+    "inter_core_dream_peers": 0,
+    "inter_core_dream_coherence": 0.0,
+    "inter_core_dream_trauma_intensity": 0.0,
+    "global_population_size": 1,
+    "global_morphic_sync_events": 0,
+    "global_trauma_broadcast_events": 0,
+    "global_market_transactions": 0,
+    "global_market_last_price": 0.0,
+    "system_stress_index": 0.187456,
+    "purpose_homeostatic_temperature": 31.297763,
+    "aion_meditation_mode": true,
+    "topological_clusters": 1,
+    "topological_core_cells": 3,
+    "topological_edges": 6,
+    "entanglement_registry": {
+      "Sicherheit": [
+        "Reaktion"
+      ],
+      "Reaktion": [
+        "Sicherheit"
+      ]
+    }
+  }
+}
+
+[2026-02-20 20:14:55] Run ceremonial preheat=10s duration=60s
+CMD> .venv\Scripts\python.exe main.py ceremonial --preheat 10 --duration 60 --snapshot D:\ATHERIA - Kopie\logs\morphic_snapshot_20260220_201328.json
+2026-02-20 20:14:58,804 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=39.92 | AutoSets=2 | Aion=0
+2026-02-20 20:15:09,923 - INFO - AION Meditation | align=0.882 morphic=0.922 dist=0.926 core=3 dreams=29 semantic=30 resource=856.52
+2026-02-20 20:15:11,073 - INFO - AION Meditation | align=0.881 morphic=0.922 dist=0.927 core=3 dreams=61 semantic=34 resource=1033.56
+2026-02-20 20:15:12,290 - INFO - AION Meditation | align=0.881 morphic=0.922 dist=0.852 core=3 dreams=77 semantic=38 resource=1196.82
+2026-02-20 20:15:13,344 - INFO - AION Meditation | align=0.875 morphic=0.922 dist=1.090 core=3 dreams=101 semantic=40 resource=1247.77
+2026-02-20 20:15:14,352 - INFO - AION Meditation | align=0.872 morphic=0.919 dist=1.216 core=3 dreams=125 semantic=44 resource=1420.01
+2026-02-20 20:15:15,374 - INFO - AION Meditation | align=0.870 morphic=0.922 dist=1.206 core=3 dreams=149 semantic=46 resource=1457.85
+2026-02-20 20:15:16,524 - INFO - AION Meditation | align=0.880 morphic=0.892 dist=0.813 core=3 dreams=173 semantic=50 resource=1648.70
+2026-02-20 20:15:17,617 - INFO - AION Meditation | align=0.872 morphic=0.922 dist=1.100 core=3 dreams=197 semantic=52 resource=1709.96
+2026-02-20 20:15:19,048 - INFO - AION Meditation | align=0.873 morphic=0.877 dist=0.937 core=3 dreams=221 semantic=55 resource=1910.53
+2026-02-20 20:15:20,393 - INFO - AION Meditation | align=0.874 morphic=0.920 dist=0.987 core=3 dreams=245 semantic=55 resource=2154.05
+2026-02-20 20:15:21,856 - INFO - AION Meditation | align=0.874 morphic=0.922 dist=0.970 core=3 dreams=269 semantic=55 resource=2177.74
+2026-02-20 20:15:22,951 - INFO - AION Meditation | align=0.871 morphic=0.922 dist=1.113 core=3 dreams=293 semantic=55 resource=2221.65
+2026-02-20 20:15:23,994 - INFO - AION Meditation | align=0.879 morphic=0.922 dist=0.750 core=3 dreams=301 semantic=56 resource=2427.85
+2026-02-20 20:15:25,005 - INFO - AION Meditation | align=0.872 morphic=0.906 dist=0.996 core=3 dreams=317 semantic=57 resource=2467.05
+2026-02-20 20:15:26,031 - INFO - AION Meditation | align=0.875 morphic=0.898 dist=0.826 core=3 dreams=333 semantic=57 resource=2524.08
+2026-02-20 20:15:27,366 - INFO - AION Meditation | align=0.878 morphic=0.922 dist=0.761 core=3 dreams=349 semantic=57 resource=2747.50
+2026-02-20 20:15:28,391 - INFO - AION Meditation | align=0.871 morphic=0.922 dist=1.056 core=3 dreams=373 semantic=58 resource=2827.37
+2026-02-20 20:15:29,423 - INFO - AION Meditation | align=0.875 morphic=0.903 dist=0.879 core=3 dreams=389 semantic=59 resource=2841.38
+2026-02-20 20:15:30,594 - INFO - AION Meditation | align=0.867 morphic=0.900 dist=1.153 core=3 dreams=397 semantic=59 resource=3074.64
+2026-02-20 20:15:31,624 - INFO - AION Meditation | align=0.872 morphic=0.911 dist=0.929 core=3 dreams=413 semantic=59 resource=3080.68
+2026-02-20 20:15:32,716 - INFO - AION Meditation | align=0.873 morphic=0.829 dist=0.700 core=3 dreams=429 semantic=59 resource=3103.71
+2026-02-20 20:15:34,021 - INFO - AION Meditation | align=0.877 morphic=0.875 dist=0.631 core=3 dreams=445 semantic=59 resource=3345.71
+2026-02-20 20:15:35,039 - INFO - AION Meditation | align=0.869 morphic=0.918 dist=0.974 core=3 dreams=469 semantic=59 resource=3392.64
+2026-02-20 20:15:36,048 - INFO - AION Meditation | align=0.871 morphic=0.865 dist=0.844 core=3 dreams=477 semantic=60 resource=3390.92
+2026-02-20 20:15:37,281 - INFO - AION Meditation | align=0.869 morphic=0.898 dist=1.067 core=3 dreams=493 semantic=60 resource=3650.95
+2026-02-20 20:15:38,424 - INFO - AION Meditation | align=0.871 morphic=0.892 dist=0.933 core=3 dreams=509 semantic=60 resource=3655.59
+2026-02-20 20:15:39,601 - INFO - AION Meditation | align=0.874 morphic=0.903 dist=0.836 core=3 dreams=525 semantic=60 resource=3667.71
+2026-02-20 20:15:40,915 - INFO - AION Meditation | align=0.871 morphic=0.887 dist=0.926 core=3 dreams=541 semantic=60 resource=3931.65
+2026-02-20 20:15:41,916 - INFO - AION Meditation | align=0.876 morphic=0.901 dist=0.737 core=3 dreams=557 semantic=60 resource=3939.03
+2026-02-20 20:15:42,960 - INFO - AION Meditation | align=0.869 morphic=0.881 dist=0.982 core=3 dreams=573 semantic=60 resource=3955.27
+2026-02-20 20:15:44,188 - INFO - AION Meditation | align=0.879 morphic=0.915 dist=0.643 core=3 dreams=589 semantic=60 resource=4231.89
+2026-02-20 20:15:45,192 - INFO - AION Meditation | align=0.874 morphic=0.870 dist=0.670 core=3 dreams=605 semantic=60 resource=4254.22
+2026-02-20 20:15:45,223 - INFO - Dashboard | Dichte=113.934 | Aggregat=Wasser | Rhythm=sleep | T=78.84 | AutoSets=24 | Aion=5
+2026-02-20 20:15:46,578 - INFO - Dashboard | Dichte=113.833 | Aggregat=Wasser | Rhythm=sleep | T=77.89 | AutoSets=24 | Aion=5
+2026-02-20 20:15:46,618 - INFO - AION Meditation | align=0.875 morphic=0.867 dist=0.645 core=3 dreams=629 semantic=62 resource=4535.34
+2026-02-20 20:15:47,647 - INFO - AION Meditation | align=0.872 morphic=0.914 dist=0.949 core=3 dreams=637 semantic=62 resource=4530.48
+2026-02-20 20:15:47,655 - INFO - Dashboard | Dichte=114.780 | Aggregat=Wasser | Rhythm=sleep | T=77.61 | AutoSets=24 | Aion=5
+2026-02-20 20:15:49,132 - INFO - AION Meditation | align=0.877 morphic=0.860 dist=0.609 core=3 dreams=653 semantic=62 resource=4538.64
+2026-02-20 20:15:49,155 - INFO - Dashboard | Dichte=115.591 | Aggregat=Wasser | Rhythm=sleep | T=77.18 | AutoSets=24 | Aion=5
+2026-02-20 20:15:50,006 - INFO - Dashboard | Dichte=116.173 | Aggregat=Wasser | Rhythm=sleep | T=77.40 | AutoSets=24 | Aion=5
+2026-02-20 20:15:50,190 - INFO - AION Meditation | align=0.878 morphic=0.885 dist=0.601 core=3 dreams=669 semantic=62 resource=4818.26
+2026-02-20 20:15:51,020 - INFO - Dashboard | Dichte=117.564 | Aggregat=Wasser | Rhythm=sleep | T=77.19 | AutoSets=24 | Aion=5
+2026-02-20 20:15:51,218 - INFO - AION Meditation | align=0.875 morphic=0.869 dist=0.662 core=3 dreams=685 semantic=62 resource=4824.56
+2026-02-20 20:15:52,245 - INFO - AION Meditation | align=0.875 morphic=0.888 dist=0.705 core=3 dreams=693 semantic=62 resource=4835.67
+2026-02-20 20:15:52,252 - INFO - Dashboard | Dichte=118.954 | Aggregat=Wasser | Rhythm=sleep | T=76.62 | AutoSets=24 | Aion=5
+2026-02-20 20:15:53,546 - INFO - Dashboard | Dichte=117.304 | Aggregat=Wasser | Rhythm=sleep | T=76.62 | AutoSets=24 | Aion=5
+2026-02-20 20:15:53,578 - INFO - AION Meditation | align=0.868 morphic=0.876 dist=0.963 core=3 dreams=709 semantic=63 resource=5000.00
+2026-02-20 20:15:54,684 - INFO - AION Meditation | align=0.872 morphic=0.877 dist=0.786 core=3 dreams=725 semantic=63 resource=5000.00
+2026-02-20 20:15:54,694 - INFO - Dashboard | Dichte=119.259 | Aggregat=Wasser | Rhythm=sleep | T=75.94 | AutoSets=24 | Aion=5
+2026-02-20 20:15:56,153 - INFO - AION Meditation | align=0.874 morphic=0.884 dist=0.755 core=3 dreams=741 semantic=63 resource=4999.06
+2026-02-20 20:15:56,185 - INFO - Dashboard | Dichte=119.885 | Aggregat=Wasser | Rhythm=sleep | T=75.87 | AutoSets=24 | Aion=5
+2026-02-20 20:15:57,058 - INFO - Dashboard | Dichte=120.407 | Aggregat=Wasser | Rhythm=sleep | T=76.06 | AutoSets=24 | Aion=5
+2026-02-20 20:15:57,262 - INFO - AION Meditation | align=0.878 morphic=0.900 dist=0.633 core=3 dreams=757 semantic=63 resource=4994.51
+2026-02-20 20:15:58,142 - INFO - Dashboard | Dichte=119.765 | Aggregat=Wasser | Rhythm=sleep | T=76.51 | AutoSets=24 | Aion=5
+2026-02-20 20:15:58,316 - INFO - AION Meditation | align=0.888 morphic=0.809 dist=0.283 core=3 dreams=773 semantic=63 resource=4994.42
+2026-02-20 20:15:59,742 - INFO - AION Meditation | align=0.879 morphic=0.836 dist=0.452 core=3 dreams=781 semantic=63 resource=5292.32
+2026-02-20 20:15:59,744 - INFO - Dashboard | Dichte=121.417 | Aggregat=Wasser | Rhythm=sleep | T=76.26 | AutoSets=24 | Aion=5
+2026-02-20 20:16:00,591 - INFO - Dashboard | Dichte=121.896 | Aggregat=Wasser | Rhythm=sleep | T=76.25 | AutoSets=24 | Aion=5
+2026-02-20 20:16:00,790 - INFO - AION Meditation | align=0.872 morphic=0.914 dist=0.911 core=3 dreams=797 semantic=63 resource=4994.41
+2026-02-20 20:16:01,721 - INFO - Dashboard | Dichte=121.222 | Aggregat=Wasser | Rhythm=sleep | T=76.05 | AutoSets=24 | Aion=5
+2026-02-20 20:16:01,827 - INFO - AION Meditation | align=0.875 morphic=0.878 dist=0.677 core=3 dreams=813 semantic=63 resource=5000.00
+2026-02-20 20:16:02,913 - INFO - AION Meditation | align=0.878 morphic=0.866 dist=0.645 core=3 dreams=821 semantic=63 resource=5046.86
+2026-02-20 20:16:02,922 - INFO - Dashboard | Dichte=121.771 | Aggregat=Wasser | Rhythm=sleep | T=76.94 | AutoSets=24 | Aion=5
+2026-02-20 20:16:04,298 - INFO - Dashboard | Dichte=122.390 | Aggregat=Wasser | Rhythm=sleep | T=77.60 | AutoSets=24 | Aion=5
+2026-02-20 20:16:04,324 - INFO - AION Meditation | align=0.872 morphic=0.922 dist=0.896 core=3 dreams=837 semantic=63 resource=5000.00
+2026-02-20 20:16:05,492 - INFO - AION Meditation | align=0.866 morphic=0.898 dist=1.111 core=3 dreams=853 semantic=63 resource=4998.63
+2026-02-20 20:16:05,506 - INFO - Dashboard | Dichte=124.602 | Aggregat=Wasser | Rhythm=sleep | T=78.40 | AutoSets=25 | Aion=5
+2026-02-20 20:16:06,703 - INFO - AION Meditation | align=0.873 morphic=0.848 dist=0.651 core=3 dreams=869 semantic=63 resource=4998.09
+2026-02-20 20:16:06,714 - INFO - Dashboard | Dichte=126.907 | Aggregat=Wasser | Rhythm=sleep | T=78.65 | AutoSets=25 | Aion=5
+2026-02-20 20:16:08,072 - INFO - Dashboard | Dichte=125.840 | Aggregat=Wasser | Rhythm=sleep | T=78.65 | AutoSets=25 | Aion=5
+2026-02-20 20:16:08,099 - INFO - AION Meditation | align=0.866 morphic=0.867 dist=1.018 core=3 dreams=885 semantic=63 resource=5000.00
+2026-02-20 20:16:09,267 - INFO - AION Meditation | align=0.876 morphic=0.922 dist=0.749 core=3 dreams=901 semantic=63 resource=4998.81
+{
+  "title": "Atheria Transzendenz-Status",
+  "status": "Transzendenz im Aufbau",
+  "duration_seconds": 60.0,
+  "singularity_reached": false,
+  "purpose_alignment": 0.875635,
+  "morphic_resonance_index": 0.92237,
+  "mean_hyperbolic_distance": 0.749407,
+  "peak_purpose_alignment": 0.888478,
+  "peak_morphic_resonance_index": 0.923033,
+  "min_mean_hyperbolic_distance": 0.283181,
+  "topological_core_cells": 3,
+  "dream_replay_delta": 896,
+  "semantic_analogy_growth": 37,
+  "semantic_resource_spent_delta": 20.417979,
+  "evolution_events_delta": 17,
+  "reproduction_events_delta": 0,
+  "reproduction_artifact_events_delta": 0,
+  "offspring_instances": 0,
+  "resource_pool_delta": 4309.295052,
+  "resource_pool_final": 4998.8079,
+  "reproduction_artifact_last_profile": null,
+  "reproduction_artifact_last_validated": false,
+  "reproduction_artifact_last_path": null,
+  "morphic_snapshot_path": "D:\\ATHERIA - Kopie\\logs\\morphic_snapshot_20260220_201328.json",
+  "meditation_samples": 207,
+  "final_snapshot": {
+    "aether_density": 127.1,
+    "aggregatform": "Wasser",
+    "phase": "liquid",
+    "system_temperature": 77.89,
+    "rhythm_state": "sleep",
+    "rhythm_cycle": 4,
+    "structural_tension": 0.0009,
+    "tensegrity_support": 0,
+    "active_cells": 46,
+    "entropic_index": 0.579,
+    "holographic_energy": 0.8889,
+    "enzymatic_compiled_paths": 233,
+    "resource_pool": 4998.8079,
+    "ather_credits": 24.0,
+    "market_role": "balanced",
+    "market_guardian_score": 0.690867,
+    "market_transactions": 0,
+    "market_borrow_events": 0,
+    "market_lend_events": 0,
+    "market_resources_in": 0.0,
+    "market_resources_out": 0.0,
+    "market_last_price": 0.0,
+    "market_last_partner": null,
+    "market_last_packet_quality": 0.0,
+    "autocatalytic_sets": 25,
+    "autocatalytic_activity": 0.0,
+    "aion_cycles": 5,
+    "aion_cycle_activity": 0.0,
+    "semantic_analogy_cells": 63,
+    "semantic_resource_spent": 36.18793,
+    "evolved_cell_types": 17,
+    "evolved_runtime_mechanisms": 14,
+    "evolution_events": 31,
+    "evolution_program_signature": "70c84386d316",
+    "reproduction_events": 0,
+    "offspring_instances": 0,
+    "lineage_selection_trials": 0,
+    "lineage_selection_child_wins": 0,
+    "lineage_selection_parent_wins": 0,
+    "lineage_last_parent_fitness": 0.0,
+    "lineage_last_child_fitness": 0.0,
+    "reproduction_artifact_events": 0,
+    "reproduction_artifact_last_profile": null,
+    "reproduction_artifact_last_path": null,
+    "reproduction_artifact_last_integrity_path": null,
+    "reproduction_artifact_last_validated": false,
+    "reproduction_artifact_last_signature": null,
+    "ecological_complexity": 0.847604,
+    "selection_pressure": 0.824798,
+    "resource_scarcity": 0.38,
+    "fitness_gradient": 0.001581,
+    "epigenetic_silenced_edges": 0,
+    "mean_hyperbolic_distance": 0.749407,
+    "dream_replay_events": 901,
+    "dream_last_replay_labels": [
+      "EvoType_002_Seed",
+      "EvoType_003_Seed",
+      "EvoType_007_Seed",
+      "Analog_Analog_Analyse_Unbekannt_Analog_Reaktion_EvoType_001_Seed",
+      "EvoType_004_Seed",
+      "PurposeNode"
+    ],
+    "healing_events": 4,
+    "healing_last_repaired_labels": [
+      "CeremonialFlux",
+      "CeremonialFlux",
+      "Analog_Reaktion_EvoType_001_Seed",
+      "EvoType_011_Seed"
+    ],
+    "time_crystal_energy": 0.0,
+    "time_crystal_targets": 10,
+    "singularity_activation": 0.443552,
+    "morphic_resonance_index": 0.92237,
+    "morphic_buffer_states": 27,
+    "intuition_spikes": 0,
+    "purpose_alignment": 0.875635,
+    "hgt_offers": 0,
+    "hgt_accepts": 0,
+    "hgt_rejects": 0,
+    "hgt_received": 0,
+    "hgt_donated": 0,
+    "hgt_last_partner": null,
+    "hgt_last_predicted_purpose_delta": 0.0,
+    "inter_core_dream_sync_events": 0,
+    "inter_core_dream_trauma_events": 0,
+    "inter_core_dream_peers": 0,
+    "inter_core_dream_coherence": 0.0,
+    "inter_core_dream_trauma_intensity": 0.0,
+    "global_population_size": 1,
+    "global_morphic_sync_events": 0,
+    "global_trauma_broadcast_events": 0,
+    "global_market_transactions": 0,
+    "global_market_last_price": 0.0,
+    "system_stress_index": 0.262379,
+    "purpose_homeostatic_temperature": 33.012995,
+    "aion_meditation_mode": true,
+    "topological_clusters": 1,
+    "topological_core_cells": 3,
+    "topological_edges": 6,
+    "entanglement_registry": {
+      "Sicherheit": [
+        "Reaktion"
+      ],
+      "Reaktion": [
+        "Sicherheit"
+      ]
+    }
+  },
+  "ceremonial_activation": {
+    "preheat_seconds": 10.0,
+    "meditation_seconds": 60.0,
+    "ceremony_queries": 73,
+    "peak_temperature": 120.0,
+    "peak_alignment_preheat": 0.468126,
+    "peak_morphic_preheat": 0.766066
+  }
+}
+
+[2026-02-20 20:16:14] Run full verification tests
+CMD> .venv\Scripts\python.exe -m unittest -v tests/test_digital_life_claims.py tests/test_claim_hardening.py tests/test_demo_forge.py tests/test_collective_extensions.py
+test_01_autonomy_without_external_input (tests.test_digital_life_claims.TestDigitalLifeClaims.test_01_autonomy_without_external_input) ... 2026-02-20 20:16:18,042 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=27.62 | AutoSets=2 | Aion=0
+ok
+test_02_disturbance_and_regeneration (tests.test_digital_life_claims.TestDigitalLifeClaims.test_02_disturbance_and_regeneration) ... 2026-02-20 20:16:22,540 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=27.62 | AutoSets=2 | Aion=0
+2026-02-20 20:16:27,749 - WARNING - Executing <Task pending name='atheria-diffusion' coro=<AtheriaCore._diffusion_loop() running at D:\ATHERIA - Kopie\atheria_core.py:4891> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()] createdat C:\Users\ralfk\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py:709> created at C:\Users\ralfk\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py:384> took 0.125 seconds
+ok
+test_03_reproduction_with_variation_and_independence (tests.test_digital_life_claims.TestDigitalLifeClaims.test_03_reproduction_with_variation_and_independence) ... 2026-02-20 20:16:28,154 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis |Rhythm=wake | T=34.56 | AutoSets=2 | Aion=0
+2026-02-20 20:16:29,730 - INFO - Self-Reproduction | offspring=ATHERIA_CHILD_001 | lineage=1
+2026-02-20 20:16:29,815 - INFO - HGT-Symbiosis | receiver=ATHERIA_CORE_1A83747C34 donor=ATHERIA_CORE_659C71D31A mechanism=EvoMechanism_001 predicted_delta=0.1097
+2026-02-20 20:16:29,820 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=33.27 | AutoSets=2 | Aion=0
+2026-02-20 20:16:29,853 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=37.15 | AutoSets=2 | Aion=0
+2026-02-20 20:16:30,313 - INFO - Self-Reproduction Artifact | offspring=ATHERIA_CHILD_001 | profile=stress-test | validated=True
+2026-02-20 20:16:30,367 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=38.51 | AutoSets=2 | Aion=0
+2026-02-20 20:16:30,408 - INFO - Dashboard | Dichte=9.375 | Aggregat=Wasser | Rhythm=wake | T=57.54 | AutoSets=2 | Aion=0
+2026-02-20 20:16:30,877 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=37.03 | AutoSets=2 | Aion=0
+2026-02-20 20:16:30,916 - INFO - Dashboard | Dichte=21.500 | Aggregat=Wasser | Rhythm=wake | T=79.06 | AutoSets=2 | Aion=0
+ok
+test_01_open_evolution_generates_programs (tests.test_claim_hardening.TestClaimHardening.test_01_open_evolution_generates_programs) ... ok
+test_02_reproduction_includes_selection_trials (tests.test_claim_hardening.TestClaimHardening.test_02_reproduction_includes_selection_trials) ... 2026-02-20 20:16:31,438 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=30.96 | AutoSets=2 | Aion=0
+2026-02-20 20:16:32,602 - INFO - Self-Reproduction | offspring=ATHERIA_CHILD_001 | lineage=1
+2026-02-20 20:16:32,682 - INFO - HGT-Symbiosis | receiver=ATHERIA_CORE_9D004F4D0A donor=ATHERIA_CORE_246228AD4D mechanism=EvoMechanism_001 predicted_delta=0.0464
+2026-02-20 20:16:32,685 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=33.42 | AutoSets=2 | Aion=0
+2026-02-20 20:16:32,722 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=38.73 | AutoSets=2 | Aion=0
+2026-02-20 20:16:33,050 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=38.66 | AutoSets=2 | Aion=0
+2026-02-20 20:16:33,146 - INFO - Self-Reproduction Artifact | offspring=ATHERIA_CHILD_001 | profile=stress-test | validated=True
+2026-02-20 20:16:33,197 - INFO - Dashboard | Dichte=11.000 | Aggregat=Wasser | Rhythm=wake | T=54.57 | AutoSets=2 | Aion=0
+2026-02-20 20:16:33,406 - INFO - Lineage-Selection | parent wins | child=ATHERIA_CHILD_001 | parent_fit=0.2657 | child_fit=0.2650
+ok
+test_03_telos_is_homeostatic_not_static_constant (tests.test_claim_hardening.TestClaimHardening.test_03_telos_is_homeostatic_not_static_constant) ... 2026-02-20 20:16:33,489 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=24.70 | AutoSets=2 | Aion=0
+ok
+test_04_ecodynamics_drives_selection_scarcity_and_gradient (tests.test_claim_hardening.TestClaimHardening.test_04_ecodynamics_drives_selection_scarcity_and_gradient) ... 2026-02-20 20:16:37,292 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=23.87 | AutoSets=2 | Aion=0
+2026-02-20 20:16:37,809 - INFO - Dashboard | Dichte=19.571 | Aggregat=Wasser | Rhythm=wake | T=79.37 | AutoSets=2 | Aion=0
+ok
+test_05_reproduction_emits_executable_artifacts (tests.test_claim_hardening.TestClaimHardening.test_05_reproduction_emits_executable_artifacts) ... 2026-02-20 20:16:40,562 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=31.19 | AutoSets=2 | Aion=0
+2026-02-20 20:16:41,522 - INFO - Self-Reproduction | offspring=ATHERIA_CHILD_001 | lineage=1
+2026-02-20 20:16:41,611 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=32.87 | AutoSets=2 | Aion=0
+2026-02-20 20:16:41,652 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=38.18 | AutoSets=2 | Aion=0
+2026-02-20 20:16:41,953 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=38.09 | AutoSets=2 | Aion=0
+2026-02-20 20:16:42,051 - INFO - Self-Reproduction Artifact | offspring=ATHERIA_CHILD_001 | profile=stress-test | validated=True
+2026-02-20 20:16:42,157 - INFO - Dashboard | Dichte=11.429 | Aggregat=Wasser | Rhythm=wake | T=60.46 | AutoSets=2 | Aion=0
+ok
+test_01_profiles_generate_and_validate (tests.test_demo_forge.TestDemoForge.test_01_profiles_generate_and_validate) ...ok
+test_02_signing_detects_tamper (tests.test_demo_forge.TestDemoForge.test_02_signing_detects_tamper) ... ok
+test_01_hgt_symbiosis_exchanges_runtime_mechanisms (tests.test_collective_extensions.TestCollectiveExtensions.test_01_hgt_symbiosis_exchanges_runtime_mechanisms) ... 2026-02-20 20:16:43,812 - INFO - HGT-Symbiosis | receiver=ATHERIA_CORE_7F68B46A08 donor=ATHERIA_CORE_27784D6873 mechanism=EvoMechanism_001 predicted_delta=0.0013
+2026-02-20 20:16:43,854 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=29.10 | AutoSets=2 | Aion=0
+ok
+test_02_ather_credit_market_rents_resources_from_guardian_core (tests.test_collective_extensions.TestCollectiveExtensions.test_02_ather_credit_market_rents_resources_from_guardian_core) ... 2026-02-20 20:16:43,970 - INFO - Ather-Credit Market | borrower=ATHERIA_CORE_63E72F9A0A lender=ATHERIA_CORE_8300CBE818 units=3.760 price=3.376 quality=0.297
+2026-02-20 20:16:44,005 - INFO - Dashboard | Dichte=0.000 | Aggregat=Eis | Rhythm=wake | T=34.55 | AutoSets=2 | Aion=0
+ok
+test_03_global_morphic_node_syncs_sleep_replay_with_trauma_echo (tests.test_collective_extensions.TestCollectiveExtensions.test_03_global_morphic_node_syncs_sleep_replay_with_trauma_echo) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 26.180s
+
+OK
+
+[2026-02-20 20:16:44] 0->100 pipeline finished successfully in 196,09s
+Log file: D:\ATHERIA - Kopie\logs\atheria_0_to_100_20260220_201328.log
+Snapshot: D:\ATHERIA - Kopie\logs\morphic_snapshot_20260220_201328.json
+PS D:\ATHERIA - Kopie>
