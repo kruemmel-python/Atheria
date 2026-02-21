@@ -1,0 +1,5 @@
+pptx=D:\Drehbuch\Hollywood-Pitch-Deck\final\AT_THE_MOUNTAINS_OF_MADNESS_FINAL_DIRECTOR_VISUAL_BIBLE_v1.pptx
+pdf=D:\Drehbuch\Hollywood-Pitch-Deck\final\AT_THE_MOUNTAINS_OF_MADNESS_FINAL_DIRECTOR_VISUAL_BIBLE_v1.pdf
+slide_count=24
+theme=deep-blue-cyan visual bible
+includes_images=diagram_spatial_map, diagram_compression_graph, diagram_palette_strip
