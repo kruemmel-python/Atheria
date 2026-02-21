@@ -1,0 +1,169 @@
+[
+  {
+    "title": "AT THE MOUNTAINS OF MADNESS",
+    "subtitle": "Image Pitch v1 | Final v7 Based\nVisual Concept + Production Logic",
+    "chapter": "Cover",
+    "image": "images/Antarctic Surface.png",
+    "bullets": [
+      "The oldest intelligence on Earth is not hunting us. It is evaluating us."
+    ]
+  },
+  {
+    "title": "Pitch Focus",
+    "chapter": "Story Engine",
+    "image": "images/Core Sequences.png",
+    "bullets": [
+      "This image-driven pitch presents character arcs, environment grammar, and production guardrails.",
+      "Goal: a studio-readable package where tone, behavior, and visual escalation stay controlled."
+    ]
+  },
+  {
+    "title": "Dr. Elias Keller",
+    "chapter": "Protagonists",
+    "image": "images/Keller.png",
+    "bullets": [
+      "Present Keller as a control-driven scientist whose grief slowly breaks visual certainty.",
+      "Keller never plays as an action hero silhouette.",
+      "Inner conflict must be readable in micro-behavior before dialogue states it."
+    ]
+  },
+  {
+    "title": "Dr. Lena Hartmann",
+    "chapter": "Protagonists",
+    "image": "images/Hartmann.png",
+    "bullets": [
+      "Frame Hartmann as the film's ethical optics system, reading risk before others verbalize it.",
+      "Hartmann's authority is observational precision, not volume.",
+      "Her choices must feel active, not reactive."
+    ]
+  },
+  {
+    "title": "Ensemble Dynamics",
+    "chapter": "Protagonists",
+    "image": "images/Ensemble.png",
+    "bullets": [
+      "Make each ensemble member visually legible as a distinct survival logic under the same system pressure.",
+      "Ensemble blocking must communicate fracture over time.",
+      "Utility props are identity signals, not decoration."
+    ]
+  },
+  {
+    "title": "Antarctic Surface",
+    "chapter": "Environments",
+    "image": "images/Antarctic Surface.png",
+    "bullets": [
+      "Use the surface world as scale-negation space where humans read as fragile temporary entries.",
+      "Surface frames must communicate orientation loss before threat.",
+      "Helicopter scale must stay modest, never heroic."
+    ]
+  },
+  {
+    "title": "Camp D1: Wrong Normal",
+    "chapter": "Environments",
+    "image": "images/Camp.png",
+    "bullets": [
+      "Present Camp D1 as \"wrong normal\" architecture where procedural order replaces human panic.",
+      "Camp should feel active-adjacent, not abandoned-ruin.",
+      "Every room must imply previous methodical action."
+    ]
+  },
+  {
+    "title": "Borehole + Vertical Shaft",
+    "chapter": "Environments",
+    "image": "images/Borehole and Vertical Shaft.png",
+    "bullets": [
+      "Make the descent space the physical lock of the narrative where return becomes impossible.",
+      "Verticality must be felt before the collapse happens.",
+      "Point-of-no-return moment must be geographically unambiguous."
+    ]
+  },
+  {
+    "title": "Alien Structure Tunnels (Entry)",
+    "chapter": "Environments",
+    "image": "images/Alien Structure Tunnels 1.png",
+    "bullets": [
+      "Stage the tunnels as active engineered anatomy where space itself performs analysis.",
+      "Tunnel geometry must read intentional and repeatable.",
+      "Material behavior remains subtle, never fantasy-biological spectacle."
+    ]
+  },
+  {
+    "title": "Alien Structure Tunnels (Pressure)",
+    "chapter": "Environments",
+    "image": "images/Alien Structure Tunnels 2.png",
+    "bullets": [
+      "Stage the tunnels as active engineered anatomy where space itself performs analysis.",
+      "Tunnel geometry must read intentional and repeatable.",
+      "Material behavior remains subtle, never fantasy-biological spectacle."
+    ]
+  },
+  {
+    "title": "Iteration Chamber + Archive",
+    "chapter": "Environments",
+    "image": "images/Iteration Chamber and Archive Wall.png",
+    "bullets": [
+      "Deliver the film's central ontological shock through controlled visual escalation, not spectacle overload.",
+      "Chamber reveal must be staged in steps, never as one total dump.",
+      "Bodies read as archived series, not gore tableau."
+    ]
+  },
+  {
+    "title": "Isolation + Final Loop",
+    "chapter": "Environments",
+    "image": "images/Isolation Station and Final Loop.png",
+    "bullets": [
+      "End with procedural chill where institutional control and cosmic recurrence collapse into one visual statement.",
+      "Isolation spaces must feel administratively clean, not dramatic.",
+      "Final loop must directly echo opening image architecture."
+    ]
+  },
+  {
+    "title": "Core Sequences Blueprint",
+    "chapter": "Execution",
+    "image": "images/Core Sequences.png",
+    "bullets": [
+      "Provide department-ready shot-run skeletons for the three most critical sequence engines.",
+      "Shot order must preserve story logic before style flourish.",
+      "Spatial continuity must remain readable in all three sequences."
+    ]
+  },
+  {
+    "title": "Signature Motifs",
+    "chapter": "Execution",
+    "image": "images/Repeating Image Tokens.png",
+    "bullets": [
+      "Lock motif continuity across editorial, color, production design, and sound as one integrated language.",
+      "Motifs must evolve meaning, not just recur visually.",
+      "Each motif needs a clear first use, transformation point, and final use."
+    ]
+  },
+  {
+    "title": "VFX Philosophy",
+    "chapter": "Execution",
+    "image": "images/VFX Philosophy Policy.png",
+    "bullets": [
+      "Protect the film's clinical tone by defining where VFX serves story precision and where it is explicitly constrained.",
+      "Practical-first execution in all actor-proximate zones.",
+      "VFX is a scale and continuity tool, not a style replacement engine."
+    ]
+  },
+  {
+    "title": "Entity Behavior Rules",
+    "chapter": "Execution",
+    "image": "images/Entity Behavior Rule Set.png",
+    "bullets": [
+      "Define strict behavior grammar so entities remain procedural intelligences, not monster antagonists.",
+      "Entities are evaluators/operators, never rage-driven hunters.",
+      "Movement reads measured and purposeful at all times."
+    ]
+  },
+  {
+    "title": "Final Production Read",
+    "chapter": "Close",
+    "image": "images/Antarctic Surface.png",
+    "bullets": [
+      "Department-ready visual control system from prep to final mix.",
+      "If a choice increases spectacle but reduces meaning clarity, reject it."
+    ]
+  }
+]
