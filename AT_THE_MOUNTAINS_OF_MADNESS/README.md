@@ -1,4 +1,5 @@
 # Hollywood Pitch Deck - Final v7.1
+<img width="2752" height="1536" alt="info" src="https://github.com/user-attachments/assets/18b02e30-10fa-49b5-bcbc-c52a731f0303" />
 
 ## Hauptdateien
 - `AT_THE_MOUNTAINS_OF_MADNESS_PITCH_DECK_v7_1.pptx`
@@ -24,3 +25,4 @@
 - Production Design: `assets/12_ENV_CAMP_D1_VISUAL_CONCEPT.md`, `assets/13_ENV_BOREHOLE_AND_VERTICAL_SHAFT_VISUAL_CONCEPT.md`, `assets/14_ENV_ALIEN_STRUCTURE_TUNNELS_VISUAL_CONCEPT.md`, `assets/15_ENV_ITERATION_CHAMBER_AND_ARCHIVE_VISUAL_CONCEPT.md`, `assets/diagram_spatial_map_camp_to_chamber.svg`, `assets/diagram_palette_strip_v7.svg`
 - VFX Supervisor: `assets/22_VFX_PHILOSOPHY_POLICY.md`, `assets/23_ENTITY_BEHAVIOR_RULE_SET.md`, `assets/15_ENV_ITERATION_CHAMBER_AND_ARCHIVE_VISUAL_CONCEPT.md`, `assets/14_ENV_ALIEN_STRUCTURE_TUNNELS_VISUAL_CONCEPT.md`, `assets/13_ENV_BOREHOLE_AND_VERTICAL_SHAFT_VISUAL_CONCEPT.md`
 - Editor / Sound: `assets/21_SIGNATURE_MOTIFS.md`, `assets/20_SHOT_BLUEPRINTS_CORE_SEQUENCES.md`, `assets/00_VISUAL_CONCEPT_FRAMEWORK.md`, `assets/16_ENV_ISOLATION_STATION_AND_FINAL_LOOP_VISUAL_CONCEPT.md`, `assets/23_ENTITY_BEHAVIOR_RULE_SET.md`
+
