@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <style>
+      .bg { fill: #0b1322; }
+      .panel { fill: #15263f; stroke: #4f7198; stroke-width: 2; }
+      .txt { fill: #d7e3f5; font-family: Segoe UI, Arial, sans-serif; font-size: 24px; }
+      .title { fill: #f2f7ff; font-family: Segoe UI, Arial, sans-serif; font-size: 36px; font-weight: 700; }
+      .accent { stroke: #36d6ff; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .muted { fill: #7fa0c7; font-family: Segoe UI, Arial, sans-serif; font-size: 20px; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 z" fill="#36d6ff"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="1000"/>
+  <text class="title" x="70" y="80">SPATIAL MAP: CAMP D1 -> CHAMBER</text>
+  <text class="muted" x="70" y="120">Top-down flow + vertical transition cue</text>
+
+  <rect class="panel" x="80" y="180" width="260" height="120" rx="16"/>
+  <text class="txt" x="120" y="250">CAMP D1</text>
+
+  <rect class="panel" x="420" y="180" width="300" height="120" rx="16"/>
+  <text class="txt" x="460" y="250">BOREHOLE EDGE</text>
+
+  <rect class="panel" x="800" y="180" width="300" height="120" rx="16"/>
+  <text class="txt" x="860" y="250">SHAFT ENTRY</text>
+
+  <rect class="panel" x="1180" y="180" width="320" height="120" rx="16"/>
+  <text class="txt" x="1240" y="250">TUNNEL SYSTEM</text>
+
+  <path class="accent" d="M340 240 L420 240"/>
+  <path class="accent" d="M720 240 L800 240"/>
+  <path class="accent" d="M1100 240 L1180 240"/>
+
+  <rect class="panel" x="620" y="430" width="360" height="150" rx="16"/>
+  <text class="txt" x="710" y="505">VERTICAL SHAFT</text>
+  <text class="muted" x="725" y="535">(Point of No Return)</text>
+
+  <path class="accent" d="M950 300 L900 430"/>
+  <path class="accent" d="M760 300 L770 430"/>
+
+  <rect class="panel" x="1080" y="700" width="430" height="170" rx="16"/>
+  <text class="txt" x="1165" y="780">ITERATION CHAMBER</text>
+  <text class="muted" x="1150" y="815">Rows -> Variation -> Archive Contact</text>
+
+  <path class="accent" d="M980 580 L1140 700"/>
+
+  <text class="muted" x="80" y="940">Use as deck systems diagram for spatial continuity and previs planning.</text>
+</svg>

@@ -1,0 +1,6 @@
+output=D:\Drehbuch\Hollywood-Pitch-Deck\final\AT_THE_MOUNTAINS_OF_MADNESS_PITCH_DECK_v7_1.pptx
+slide_count=23
+theme=deep-blue-cyan
+fonts=Segoe UI / Segoe UI Semibold
+aspect=16:9
+layouts=cover|standard|keyart|character|money|money2|closing

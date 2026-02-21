@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="620" viewBox="0 0 1800 620">
+  <defs>
+    <style>
+      .bg { fill: #0b1322; }
+      .title { fill: #f2f7ff; font-family: Segoe UI, Arial, sans-serif; font-size: 34px; font-weight: 700; }
+      .txt { fill: #d7e3f5; font-family: Segoe UI, Arial, sans-serif; font-size: 20px; }
+      .muted { fill: #7fa0c7; font-family: Segoe UI, Arial, sans-serif; font-size: 18px; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1800" height="620"/>
+  <text class="title" x="70" y="70">PALETTE STRIP (v7 Visual Policy)</text>
+  <text class="muted" x="70" y="105">Use as shared reference across production design, grading, and VFX.</text>
+
+  <rect x="80" y="160" width="280" height="240" fill="#E8F0F8"/>
+  <rect x="360" y="160" width="280" height="240" fill="#8EA0B3"/>
+  <rect x="640" y="160" width="280" height="240" fill="#0D121A"/>
+  <rect x="920" y="160" width="280" height="240" fill="#36D6FF"/>
+  <rect x="1200" y="160" width="280" height="240" fill="#C98A3A"/>
+  <rect x="1480" y="160" width="240" height="240" fill="#7A2F2F"/>
+
+  <text class="txt" x="110" y="445">Ice White</text>
+  <text class="muted" x="110" y="475">#E8F0F8</text>
+
+  <text class="txt" x="390" y="445">Storm Grey</text>
+  <text class="muted" x="390" y="475">#8EA0B3</text>
+
+  <text class="txt" x="670" y="445">Carbon Black</text>
+  <text class="muted" x="670" y="475">#0D121A</text>
+
+  <text class="txt" x="950" y="445">Data Cyan</text>
+  <text class="muted" x="950" y="475">#36D6FF</text>
+
+  <text class="txt" x="1230" y="445">Emergency Amber</text>
+  <text class="muted" x="1230" y="475">#C98A3A</text>
+
+  <text class="txt" x="1510" y="445">Blood Rust</text>
+  <text class="muted" x="1510" y="475">#7A2F2F</text>
+</svg>
